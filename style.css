@@ -1,0 +1,315 @@
+
+body{
+    background-color: rgb(241, 238, 238);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", inherit ;
+    
+}
+
+.navbar {
+    display: flex;
+    height: 110px;
+    background-color: #dc2c1d;
+}
+
+.navlist {
+    height: 110px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+.navlist li a {
+    font-size: 20px;
+    text-decoration: none;
+    /* margin-left: 2%; */
+    padding: 26px 40px;
+    color: white;
+    position: relative;
+    left: 250px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.navlist li a:hover {
+    color: #F7D86F;
+    text-decoration-thickness: 15%;
+    visibility: visible;
+    transition: 0.9s;
+}
+
+.navbar #btn {
+    height: 50px;
+    width: 10%;
+    /* background-color: black; */
+    padding: 20px 20px 0 0;
+    margin: 13px 0 35px 0;
+    position: absolute;
+    left: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar i {
+    position: absolute;
+    right: 0;
+    font-size: 1.4vw;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+ #btn button {
+    padding: 15px;
+    font-weight: 600;
+    align-items: center;
+    text-align: center; 
+    border: 40vw;
+    border-radius: 15px;
+    background-color: #F7D86F;
+}
+
+
+#btn button:hover {
+    cursor: pointer;
+    font-weight: 750;
+    box-shadow: 2px 2px;
+}
+
+
+#icon {
+    height: 100%;
+    width: 120%;
+    padding: 8px 30px;
+    margin-right: 20px;
+}
+
+
+.content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left {
+    height: 200px;
+    width: 50vw;
+    margin: 70px 30px;
+}
+
+.left h3 {
+    font-size: 2.5vw;
+}
+
+.left span {
+    color: #dc2c1d;
+}
+
+.left p {
+    margin-top: 30px;
+    font-size: 1.2vw;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.explore_btn button {
+    margin-top: 20px;
+    height: 6vh;
+    width: 7.2vw;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    border: 40vw;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: #F7D86F;
+    cursor: pointer;
+}
+
+
+.explore_btn button:hover {
+    cursor: pointer;
+    color: rgb(84, 80, 80);
+    font-weight: 600;
+    background-color: #F7D86F;
+    box-shadow: 2px 2px;
+}
+
+.right {
+    width: 50vw;
+    padding: 20px 0 0 20px;
+}
+
+.right img {
+    border-radius: 50%;
+    background-color: #F7D86F;
+}
+
+#home {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#home .main_content{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#apply {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#apply_btn {
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    background-color: #F7D86F;
+    font-weight: 600;
+    border-radius: 60px;
+}
+
+#apply_btn:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px;
+}
+
+/* Responsive */
+
+@media (min-width : 800px) and (max-width : 1200px) {
+
+    .navlist li a{
+        position: relative;
+        left: 70px;
+    }
+}
+
+@media (max-width: 1030px) {
+    #btn button {
+        /* position: relative; */
+        display: none;
+    }
+    .right img{
+        width: 100%;
+        border-radius: 50%;
+     }
+}
+
+@media  (max-width : 900px) {
+    .navlist li a{
+        left: 30%;
+    }
+
+    .right img{
+        width: 100%;
+        border-radius: 50%;
+     }
+}
+
+@media (max-width:800px) {
+    
+    #icon {
+        width: 14vw;
+    }
+
+    .navlist li a {
+        font-size: 16px;
+        display: none;
+    }
+
+    .navbar ul i {
+        display: block;
+        position: absolute;
+        left: 80%;
+        font-size: 7vw;
+    }
+
+    #btn button {
+        position: relative;
+        display: none;
+    }
+
+    .navbar ul i {
+        /* margin: 120%; */
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 10%;
+        font-size: 6.4vh;
+    }
+
+    #btn button {
+        position: relative;
+        display: none;
+    }
+
+    .left{
+        height: 5%;
+        width: 100%;
+        margin: 10px 10px;
+        padding-top: 10px ;
+        
+    }
+
+    .left h3{
+        display:block;
+        top: 10%;
+        font-size: 5.6vw;
+    }
+
+    .left p {
+        margin-right: 10%;
+        font-size: 3.8vw;
+    }
+
+    .explore_btn button {
+        align-items: start;
+        text-align: center;
+        height: 5vh;
+        width: 30%;
+    }
+
+    .right {
+       display: none;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    #icon { 
+        width: 20vw;
+    }
+
+
+    ul .element{
+        position: fixed;
+        width: 100%;
+        height: 20vh;
+        background-color: aqua;
+        top: 80px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul li .element{
+        display: block;
+    }
+}
